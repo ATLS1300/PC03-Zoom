@@ -1,5 +1,5 @@
-# PC03_start
-Start code for PC03, and snippets of cool spirograph code!
+# Week 3 and PC03 Content
+Practice code to learn about lists, tuples & ranges, start code for PC03, and snippets of cool spirograph code!
 <br>
 <br>
 Download these files in order to get a fast start to your Programming Challenge. In this folder you'll find:
