@@ -4,8 +4,8 @@ Practice code to learn about lists, tuples & ranges, start code for PC03, and sn
 <br>
 Download these files in order to get a fast start to your Programming Challenge. In this folder you'll find:
 <br><b>     1. PC03 start code</b>- Imports turtle and math, creates a window for you!
-<br><b>     2. Spirograph snippet</b>- Contains a bit of code that draws a square and circle spirograph. <b>READ THE INSTRUCTIONS IN THE FILE BEFORE USING.</b>
-<br><b>     3. In-class Example code</b>- Contains the wave example built in class with detailed comments, for review/help.
+<br><b>     2. Spirograph code</b>- Contains a bit of code that draws a square and circle spirograph. <b>READ THE INSTRUCTIONS IN THE FILE BEFORE USING.</b>
+<br><b>     3. In-class code (2)</b>- Contains activities and example code we'll biuld in class with detailed comments, for review/help.
 <br>
 <br>
 For this assignment, you'll use the turtle library to create a unique, still image background for Zoom! Because we all still use Zoom...right?
