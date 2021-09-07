@@ -19,14 +19,13 @@ How to borrow code
     Do not take what you do not understand!
 '''
 
-import math
-from turtle import * #import the library of commands that you'd like to use
-colormode(255)
+import math, turtle #import the libraries of commands that you'd like to use
+turtle.colormode(255)
 
-Screen().bgcolor('black') # set the background color to black.
-color((80,80,200)) # set the turtle color using RGB values inside of a tuple
-speed(10) # draw at the fastest speed
-up()
+panel = turtle.Screen().bgcolor('black') # set the background color to black.
+turtle.color((80,80,200)) # set the turtle color using RGB values inside of a tuple
+turtle.speed(10) # draw at the fastest speed
+turtle.up() # pick up the pen
 
 #===============================
 #Circle spirograph (EASY!)
@@ -36,16 +35,17 @@ numIt = int(360/inc) # the number of iterations to make a complete circle.
 innerCirc = 2 # radius of inner circle
 radius = 50 # radius of circles drawn in pattern
 
-goto(150,150) # center of the pattern
+turtle.goto(150,150) # center of the pattern
 
 for iteration in range(numIt):
-    down()
-    circle(radius)
-    forward(innerCirc)
-    right(inc)    
+    # for loop creates a ring of overlapping circles--a spirograph!
+    turtle.down()
+    turtle.circle(radius)
+    turtle.forward(innerCirc)
+    turtle.right(inc)    
 #=============================== 
 # This section allows for clean execution of the code! (Ignore it)
-up()    
+turtle.up()    
  
 #===============================
 #Polygon spirograph (HARD!)
@@ -59,13 +59,18 @@ inc = 10 # angle increment between shapes in pattern
 numIt = int(360/inc) # the number of iterations to make a complete circle. 
 innerCirc = 20 # radius of inner circle
 
-goto(-100,-50) # center of the pattern
+turtle.goto(-100,-50) # center of the pattern
 
 for iteration2 in range(numIt):
-    down()
+    turtle.down()
     for iteration1 in range(sides):
-        forward(size)
-        right(angle)
-    up()
-    forward(innerCirc)
-    right(inc)
+        turtle.forward(size)
+        turtle.right(angle)
+    turtle.up()
+    turtle.forward(innerCirc)
+    turtle.right(inc)
+
+    
+# ================================
+# Clean up!
+turtle.done()
