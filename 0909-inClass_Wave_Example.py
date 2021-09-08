@@ -8,7 +8,7 @@ Created on Thu Sep 10 12:58:10 2020
 #============================
 # 1. IMPORT LIBRARIES
 
-from turtle import *  #import everything inside the turtle library
+import  turtle #import everything inside the turtle library
 import math # import math, but keep it under the math library name.
 
 #=============================
@@ -29,8 +29,8 @@ for angle in ANGLES:
     RAD = math.radians(angle)  # convert from degrees (0-360) to radians (0-2*pi)
     Y = height * math.sin(RAD) + offset # use the sine function to create a wave
     X = angle # move forward so it makes a wave, not a line
-    goto(X,Y)
+    turtle.goto(X,Y)
     
 # Want to animate after the code runs?
 # Comment out the next line (place a # at the beginning of the line)
-done() # allows you to close your window by hitting the x. 
+turtle.done() # allows you to close your window by hitting the x. 
